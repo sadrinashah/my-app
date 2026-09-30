@@ -13,9 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Diagnostics sales · Diatec",
-  description:
-    "2026 diagnostics sales dashboard for Diatec Diagnostics, Singapore. Actuals, revised budget, brands, and product lines.",
+  title: "Diagnostics sales",
+  description: "Private dashboard.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
